@@ -392,9 +392,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #ed431f;
+    border-color: #337AB4;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: #2E5386;
 }
 
 .btn-primary:active,
@@ -471,4 +471,21 @@ img{
 background-size: cover;
 width: 650px;
 height: 300px;
+}
+
+.transparent{
+    background:rgba(255,255,255,0.5);
+    border-radius: 10px;
+}
+.head-text{
+    color: #222222 !important;
+
+}
+.head-title{
+    color: #337AB4 !important;
+}
+#logo{
+    height: 30px;
+    width: 40px;
+    display: inline-block;
 }

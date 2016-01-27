@@ -23,6 +23,7 @@
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="Content/Plugins/Animate/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="Content/Plugins/lightbox/src/css/lightbox.css" type="text/css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="Content/Custom/css/custom-bootstrap.css" type="text/css">
@@ -68,7 +69,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">EJ Drone</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img id="logo" src="Content/Custom/img/favicon/favicon-196x196.png"> EJ Drone</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -78,7 +79,7 @@
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Photos</a>
+                        <a class="page-scroll" href="#trest" id="gallery">Photos</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -92,12 +93,12 @@
 
     <header>
         <div class="header-content">
-            <div class="header-content-inner">
-                <h1>EJ Drone</h1>
-                <hr>
-                <p>Spécialiser dans la prise de vue photos et vidéo aériennes en haute définitions</p>
-                <a href="#services" class="btn btn-primary btn-xl page-scroll">En savoir plus</a>
+            <div class="header-content-inner transparent">
+                <h1 class="head-text">EJ Drone</h1>
+                <br/>
+                <p class="head-text">Photos et vidéos aériennes en haute définitions</p>
             </div>
+            <a href="#services" class="btn btn-primary btn-xl page-scroll">En savoir plus</a>
         </div>
     </header>
 
@@ -105,39 +106,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">À votre services</h2>
+                    <h2 class="section-heading">À votre service</h2>
                     <hr class="primary">
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Photos</h3>
-                        <p class="text-muted">Suivez le changement de saison sur l'environnement, maitriser votre chantier, valoriser votre bien immobilier grâce au prise de vue aérienne</p>
+                        <i class="fa fa-4x fa-camera wow bounceIn text-primary"></i>
+                        <h3>Photo</h3>
+                        <p class="text-muted">Suivez le changement de saison sur l'environnement, maîtriser votre chantier, valoriser votre bien immobilier grâce aux prises de vues aériennes !</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <i class="fa fa-4x fa-video-camera wow bounceIn text-primary" data-wow-delay=".1s"></i>
                         <h3>Vidéo</h3>
-                        <p class="text-muted">Filmez vos actions d'un point de vue aérien, réalisez des inspection ou seul le drone peux aller, vision thermique !</p>
+                        <p class="text-muted">Filmez vos actions d'un point de vue aérien, réalisez des inspections ou seul le drone peut aller, vision thermique !</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Panorama</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
                         <h3>Événement</h3>
-                        <p class="text-muted">Parfait pour vos photos de mariage, anniversaire !</p>
+                        <p class="text-muted">Parfait pour vos photos de mariage, anniversaire ... !</p>
                     </div>
                 </div>
             </div>
@@ -148,95 +142,48 @@
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="Content/Custom/img/portfolio/7.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
+                    <a id="photo" href="Content/Custom/img/EJDrone/Chantier.jpg" data-lightbox="Photo-Drone" data-title="Photo chantier">
+                        <img src="Content/Custom/img/EJDrone/Chantier.jpg" class="img-responsive" alt="Photo chantier">
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="Content/Custom/img/portfolio/8.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
+                    <a href="Content/Custom/img/EJDrone/Eolienne0.jpg" data-lightbox="Photo-Drone" data-title="Photo éolienne">
+                    <img src="Content/Custom/img/EJDrone/Eolienne0.jpg" class="img-responsive" alt="Photo éolienne">
+                        </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="Content/Custom/img/EJDrone/Industrie.jpg" data-lightbox="Photo-Drone" data-title="Photo zone industriel">
+                    <img src="Content/Custom/img/EJDrone/Industrie.jpg" class="img-responsive" alt="Photo zone industriel">
+                        </a>
+                </div>
+                </div>
+            <div class="row no-gutter">
+            <div class="col-lg-4 col-sm-6">
+                <a href="Content/Custom/img/EJDrone/G0011563.JPG" data-lightbox="Photo-Drone" data-title="Photo labyrinthe">
+                <img src="Content/Custom/img/EJDrone/G0011563.JPG" class="img-responsive" alt="Photo éolienne">
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="Content/Custom/img/portfolio/9.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                    <a href="Content/Custom/img/EJDrone/G0041881.JPG" data-lightbox="Photo-Drone" data-title="Photo zone château">
+                    <img src="Content/Custom/img/EJDrone/G0041881.JPG" class="img-responsive" alt="Photo éolienne">
+                        </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="Content/Custom/img/portfolio/10.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                    <a href="Content/Custom/img/EJDrone/G0010019.JPG" data-lightbox="Photo-Drone" data-title="Photo résidence">
+                <img src="Content/Custom/img/EJDrone/G0010019.JPG" class="img-responsive" alt="">
+                        </a>
+
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="Content/Custom/img/portfolio/11.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="Content/Custom/img/portfolio/12.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                <a href="Content/Custom/img/EJDrone/11312771_1440779242893009_5974629121790788091_o.jpg" data-lightbox="Photo-Drone" data-title="Photo sa"></a>
+                <a href="Content/Custom/img/EJDrone/11357041_1440779222893011_1520947584753228368_o.jpg" data-lightbox="Photo-Drone" data-title="Photo sa"></a>
+                <a href="Content/Custom/img/EJDrone/G0010175.JPG" data-lightbox="Photo-Drone" data-title="Photo sa"></a>
+                <a href="Content/Custom/img/EJDrone/G0020078.JPG" data-lightbox="Photo-Drone" data-title="Photo labdzayrinthe"></a>
+                <a href="Content/Custom/img/EJDrone/11885673_1465257540445179_7830464274896202729_o.jpg" data-lightbox="Photo-Drone" data-title="Photo labdzayrinthe"></a>
+                <a href="Content/Custom/img/EJDrone/IMG_1530.JPG" data-lightbox="Photo-Drone" data-title="Photo labdazzdyrinthe"></a>
+                <a href="Content/Custom/img/EJDrone/G0011570.JPG" data-lightbox="Photo-Drone" data-title="Photo labyrisasnthe"></a>
+                <a href="Content/Custom/img/EJDrone/G0041928.JPG" data-lightbox="Photo-Drone" data-title="Photo labyazeaearinthe"></a>
+                <a href="Content/Custom/img/EJDrone/G0011592.JPG" data-lightbox="Photo-Drone" data-title="Photo labeazeayrinthe"></a>
+                <a href="Content/Custom/img/EJDrone/G0011602.JPG" data-lightbox="Photo-Drone" data-title="Photo labyrdazdainthe"></a>
             </div>
         </div>
     </section>
@@ -244,8 +191,7 @@
     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
-                <h2>Homologation !</h2>
-                <a href="#contact" class="btn btn-default btn-xl wow tada">Contactez moi !</a>
+                <a href="#contact" class="btn btn-primary btn-xl wow tada page-scroll">Contactez moi !</a>
             </div>
         </div>
     </aside>
@@ -254,27 +200,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Je peux vous aidez !</h2>
+                    <h2 class="section-heading">Certifié, diplomé, expérimenté !</h2>
                     <hr class="primary">
-                    <p>Certifier diplomer expérimenter</p>
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <p>Prêt à démarrer votre projet ? Formidable ! </p>
+                    <p>Contactez-moi pour un devis personnalisé</p>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
+                </div>
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <a>
                     <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>06 06 06 06 06</p>
+                    <p>06 03 98 17 30</p></a>
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 text-center"><a href="mailto:your-email@your-domain.com">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">ej.drone@orange.fr</a></p>
+                    <p>ej.drone@orange.fr</p></a>
                 </div>
-
                 <div class="col-lg-4 text-center">
+                    <a href="https://www.facebook.com/EJ-DRONE-1440033429634257">
                     <i class="fa fa-facebook fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">Facebook</a></p>
+                    <p>Facebook</p>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted text-center">© Copyright 2016, EJ DRONE</p>
+        </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="Content/Plugins/Jquery/jquery.js"></script>
@@ -289,6 +244,21 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="Content/Custom/js/creative.js"></script>
+    <script src="Content/Plugins/lightbox/src/js/lightbox.js"></script>
+
+    <script>
+        lightbox.option({
+            'alwaysShowNavOnTouchDevices': true,
+            'albumLabel': "Image %1 sur %2",
+            'wrapAround': true
+        })
+        $(document).ready(function() {
+            $('#gallery').click()(function(e){
+                $('#photo').get(0).click();
+            });
+        });
+    </script>
+
 
 </body>
 </html>
